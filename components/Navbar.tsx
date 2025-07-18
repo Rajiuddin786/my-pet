@@ -5,6 +5,7 @@ import SignIn from '@/components/buttons/sign-in'
 import LogOut from '@/components/buttons/log-out'
 import { auth } from "@/app/api/auth/auth"
 import Logo from '@/public/logo.jpg'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 
 const Navbar = async () => {

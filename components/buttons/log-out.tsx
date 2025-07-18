@@ -1,5 +1,6 @@
 import React from 'react'
 import { signOut } from '@/app/api/auth/auth';
+import { Button } from "@/components/ui/button";
 
 export default function LogOut(){
   return (
@@ -7,7 +8,7 @@ export default function LogOut(){
         "use server"
         await signOut()
     }}>
-        <button type="submit">Log Out</button>
+        <Button type="submit">Log Out</Button>
     </form>
   )
 }
