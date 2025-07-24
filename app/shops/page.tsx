@@ -1,4 +1,3 @@
-import React from 'react'
 import clientPromise from '@/lib/shopsDB'
 import DisplayShops from '@/components/DisplayShops';
 

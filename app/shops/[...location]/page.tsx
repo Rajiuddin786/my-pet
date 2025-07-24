@@ -1,8 +1,6 @@
 // File: app/shops/[...location]/page.tsx
 
 import clientPromise from '@/lib/shopsDB';
-import Image from 'next/image';
-import Link from 'next/link';
 import DisplayShops from '@/components/DisplayShops';
 
 interface LocationProps {
