@@ -12,7 +12,6 @@ export default function LoginPage() {
           </div>
             <span className="text-lg font-bold">Login</span>
         </a>
-        
         <LoginForm />
       </div>
     </div>

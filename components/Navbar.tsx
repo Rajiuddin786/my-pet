@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { use } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import LogOut from '@/components/buttons/log-out'
 import { auth } from "@/app/api/auth/auth"
 import Logo from '@/public/logo.jpg'
-import { Button } from './ui/button';
+import LogInButton from '@/components/buttons/log-in';
 
 
 
@@ -27,7 +27,7 @@ const Navbar = async () => {
                     </div>
                 ) : (
                     <div className="flex items-center space-x-6 pt-1">
-                        <Link href='/login'>LogIn</Link>
+                        <LogInButton/>
                     </div>
                 )}
             </div>
