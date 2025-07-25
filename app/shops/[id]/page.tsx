@@ -1,5 +1,5 @@
 import React from 'react'
-import clientPromise from '@/lib/shopsDB'
+import clientPromise from "@/lib/db";
 import Image from 'next/image'
 import { ObjectId } from 'mongodb';
 

@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
 
-const LocateShopButton = () => {
+const LocateShopButton = ({shops}:{shops:string}) => {
+  const name=shops;
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -19,7 +20,7 @@ const LocateShopButton = () => {
 
   return (
     <Button onClick={handleLocateShop} disabled={loading}>
-      {loading ? 'Locating...' : '📍 Locate Shop'}
+      {loading ? 'Locating...' : name}
     </Button>
   );
 };

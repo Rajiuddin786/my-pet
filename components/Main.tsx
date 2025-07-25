@@ -9,7 +9,7 @@ const Main =async () => {
   return (
     <main className='flex items-center justify-center h-screen bg-gray-100'> 
         {session ? (
-          <LocateShopButton/>
+          <LocateShopButton shops="📍 Locate Shop"/>
         ):(
           <LogInButton/>
         )}
